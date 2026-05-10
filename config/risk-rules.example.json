@@ -1,0 +1,34 @@
+{
+  "version": "0.1.0",
+  "notes": "Example future risk rules file. v0.1.0 has rules implemented in code. JSON-driven rule loading is planned.",
+  "severityOrder": [
+    "Critical",
+    "High",
+    "Medium",
+    "Low",
+    "Info"
+  ],
+  "rules": [
+    {
+      "id": "AD-STALE-USERS",
+      "category": "Active Directory",
+      "severity": "High",
+      "title": "Stale enabled user accounts found",
+      "recommendation": "Perform an access review and disable or remove accounts that are no longer required."
+    },
+    {
+      "id": "WIN-LOW-DISK",
+      "category": "Windows Health",
+      "severity": "High",
+      "title": "Low disk space detected",
+      "recommendation": "Clean up storage, remove old data, expand the disk, and add monitoring/alerting."
+    },
+    {
+      "id": "NET-TELNET-OPEN",
+      "category": "Network Exposure",
+      "severity": "High",
+      "title": "Telnet detected",
+      "recommendation": "Disable Telnet and use SSH/HTTPS management where supported."
+    }
+  ]
+}
