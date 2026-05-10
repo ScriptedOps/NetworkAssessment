@@ -1,0 +1,16 @@
+# Assessment output may contain sensitive client information
+output/*
+!output/.gitkeep
+
+# PowerShell/editor clutter
+*.ps1xml
+*.psd1.tmp
+.vscode/
+.idea/
+
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
